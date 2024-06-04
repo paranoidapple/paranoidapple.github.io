@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/vocabtrainer/base.css">
+
+        <link rel="stylesheet" media="only screen and (max-width: 700px)" href="css/vocabtrainer/mobile.css">
+        <link rel="stylesheet" media="only screen and (min-width: 701px)" href="css/vocabtrainer/desktop.css">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js"></script>
+        <script src="vocabtrainer/vocab.js" defer></script>
+        <title>vocab trainer</title>
+    </head>
+    <body>
+        <div id="title">
+            <strong style="font-size: 2.5em;">vocab trainer</strong>
+        </div>
+        <div id="sliders">
+            <div>
+                <label for="A">Column A</label>
+                <input type="range" min="0" max="44" value="44" class="slider" id="A">
+                <input class="slider-value" min="0" max="44" value="44" type="number"></input>
+            </div>
+            <div>
+                <label for="B">Column B</label>
+                <input type="range" min="0" max="44" value="44" class="slider" id="B">
+                <input class="slider-value" min="0" max="44" value="44" type="number"></input>
+            </div>
+            <div>
+                <label for="C">Column C</label>
+                <input type="range" min="0" max="44" value="44" class="slider" id="C">
+                <input class="slider-value" min="0" max="44" value="44" type="number"></input>
+            </div>
+            <div>
+                <label for="D">Column D</label>
+                <input type="range" min="0" max="44" value="44" class="slider" id="D">
+                <input class="slider-value" min="0" max="44" value="44" type="number"></input>
+            </div>
+            <div>
+                <label for="P">Page Max</label>
+                <input type="range" min="1" max="36" value="36" class="slider" id="P">
+                <input class="slider-value" min="1" max="36" value="36" type="number"></input>
+            </div>
+        </div>
+        
+        <div id="main">
+            <div id="focus-word">
+                n/a
+            </div>
+            <div id="btn-grid">
+                <div class="multi-choice-btn"></div>
+                <div class="multi-choice-btn"></div>
+                <div class="multi-choice-btn"></div>
+                <div class="multi-choice-btn"></div>
+            </div>
+        </div>
+    </body>
+</html>

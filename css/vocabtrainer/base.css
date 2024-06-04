@@ -1,0 +1,84 @@
+body {
+    background-color: #060c20;
+}
+
+* {
+    font-family: "Barlow Semi Condensed";
+    color: #ddd;
+    word-wrap: break-word;
+}
+
+strong, a {
+    color: #ff3129;
+}
+
+a:hover {
+    color: #c3130d;
+}
+
+body {
+    overflow-y: auto;
+}
+
+#title {
+    text-align: center;
+}
+
+#main {
+    text-align: center;
+}
+
+#sliders {
+    display: flex;
+    flex-direction: column;
+    white-space: nowrap;
+}
+
+.slider-value {
+    display: inline-block; 
+
+    background-color: #060c20;
+    color: #ddd;
+    border: none;
+}
+
+#btn-grid {
+    display: grid;
+    gap: 20% 10%;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.multi-choice-btn {
+    background-color: #060c20;
+    border: 1px solid #c3130d;
+    border-radius: 20px;
+    padding: 10%;
+
+    cursor: pointer;
+
+    align-items: center;
+    justify-content: center;
+
+    transition: transform 0.3s;
+}
+
+.multi-choice-btn:hover {
+    transform: scale(1.15);
+}
+
+.multi-choice-btn.disabled {
+    border: 1px solid #610a07;
+    color: #999;
+    cursor: not-allowed;
+}
+
+.multi-choice-btn.disabled:hover {
+    transform: scale(1);
+}
+
+.multi-choice-btn.correct {
+    border-color: #45e28c;
+}
+
+

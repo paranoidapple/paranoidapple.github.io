@@ -1,0 +1,26 @@
+* {
+    font-size: 4vw;
+}
+
+#title {
+    margin: 10% auto;
+}
+
+#main {
+    max-width: 90%;
+    margin: 7% auto;
+}
+
+#focus-word {
+    font-size: 5vw;
+    margin: 5% auto;
+}
+
+#sliders {
+    text-align: center;
+}
+
+.slider {
+    display: inline-block;
+    margin: 3% 3%;
+}

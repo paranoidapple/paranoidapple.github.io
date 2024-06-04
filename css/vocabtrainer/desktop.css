@@ -1,0 +1,28 @@
+* {
+    font-size: 1.75vw;
+}
+
+#title {
+    margin: 5% auto;
+}
+
+#main {
+    max-width: 80%;
+    margin: 5% auto;
+}
+
+#focus-word {
+    font-size: 2.25vw;
+    margin: 8% auto;
+}
+
+#sliders {
+    position: fixed;
+    top: 3%;
+    right: 5%;
+}
+
+.slider {
+    display: inline-block;
+    margin: 6% 3%;
+}

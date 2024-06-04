@@ -16,13 +16,9 @@ a:hover {
     color: #11bc6d;
 }
 
-body {
-    overflow-y: auto;
-}
-
 #main {
     position: relative;
-    margin: 10vh auto;
+    margin: 10vh auto 0;
     text-align: center;
 }
 
@@ -36,7 +32,6 @@ body {
 
     display: flex;
     flex-wrap: wrap;
-    box-sizing: border-box;
 }
 
 #projects, #bio {
@@ -44,18 +39,10 @@ body {
 
     border: 1px solid #ddd;
     border-radius: 10px;
-    padding: 10px;
+    padding: 2%;
 
-    line-height: 1.15;
-
-    display: flex;
-    
+    line-height: 120%;
     box-sizing: border-box;
-}
-
-#projects {
-    align-items: center;
-    justify-content: center;
 }
 
 #bio {
@@ -63,7 +50,38 @@ body {
 }
 
 #connections {
-    position: absolute;
+    display: inline-flex;
     margin: 0 auto;
-    width: 100%;
+    justify-content: center;
+}
+
+.connect {
+    margin: 0% 2%;
+}
+
+.connect img {
+    position: relative;
+    transition: 0.3s filter;
+}
+
+.connect span {
+    display: none;
+    position: absolute;
+    transform: translate(-25%, -120%);
+
+    width: fit-content;
+    padding: 1%;
+
+    font-size: 16px;
+    background: #9452eb;
+    color: #ddd;
+    border-radius: 10px;
+}
+
+.connect:hover img {
+    filter: saturate(1.75);
+}
+
+.connect:hover span {
+    display: block;
 }
